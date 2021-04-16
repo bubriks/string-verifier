@@ -1,13 +1,16 @@
-name: "Python Container Action Template"
-description: "Get started with Python Container actions"
-author: "Jacob Tomlinson"
+name: "String verifier"
+description: "Verify that strings follow the regex pattern and match groups"
+author: "Ralfs Zangis"
 inputs:
-  myInput:
-    description: "Input to use"
-    default: "world"
+  expression:
+    description: "Regex string for string verification"
+    required: true
+  strings:
+    description: "List of strings to verify"
+    required: true
 outputs:
-  myOutput:
-    description: "Output from the action"
+  groups:
+    description: "The matching groups (based on regex)"
 runs:
   using: "docker"
   image: "Dockerfile"
