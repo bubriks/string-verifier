@@ -21,7 +21,7 @@ def main():
         else:
             sys.exit("String doesnt match the pattern" +
                      "\nString: " + i)
-    print(f"::set-output name=groups::{match.groups()}")
+    print(f"::set-output name=groups::{' '.join(match.groups())}")
     print(f"::set-output name=result::{match.group(0)}")
 
 

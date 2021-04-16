@@ -18,16 +18,17 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Check content
-      uses: bubriks/string-verifier@0.0.2
+      uses: bubriks/string-verifier@0.0.3
       with:
         expression: ^contributions/(.+)/(.+)/
-        strings: contributions/1/2/ contributions/1/2/
+        strings: contributions/1/2/test contributions/1/2/
 ```
 
 #### Result from example
 
 ```
-('1', '2')
+groups::1 2
+result::contributions/1/2/
 ```
 
 ### Inputs
