@@ -18,7 +18,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Check content
-      uses: bubriks/string-verifier@0.0.1
+      uses: bubriks/string-verifier@0.0.2
       with:
         expression: ^contributions/(.+)/(.+)/
         strings: contributions/1/2/ contributions/1/2/
@@ -42,3 +42,4 @@ jobs:
 | Output                                             | Description                                        |
 |------------------------------------------------------|-----------------------------------------------|
 | `groups`  | The matching groups (based on regex)    |
+| `result`  | Result of the matching    |

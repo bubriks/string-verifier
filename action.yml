@@ -11,6 +11,8 @@ inputs:
 outputs:
   groups:
     description: "The matching groups (based on regex)"
+  result:
+    description: "Result of the matching"
 runs:
   using: "docker"
   image: "Dockerfile"
